@@ -1,0 +1,12 @@
+
+
+
+
+<div class="button">
+    <a href="view_page.php?pid=<?php echo $fetch_products['id']; ?>" class="bx bxs-show"></a>
+    <button type="submit" name="delete_item" onclick="return confrim('delete this item');"><i class="bx bx-x"></i></button>
+</div>
+<input type="hidden" name="product_id" value="<?= $fetch_product['id']; ?>">
+
+
+<?php if ($fetch_order['status'] == 'cancle') echo 'style="border:2px solid red;"'; ?>
